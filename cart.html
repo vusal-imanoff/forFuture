@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacola - Grocery Market and Food Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://klbtheme.com/bacola/wp-content/uploads/2021/08/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <div class="container text-center">
+                <span>Due to the <strong>COVID 19</strong> epidemic, orders may be processed with a slight delay</span>
+            </div>
+        </div>
+        <div class="header_two">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="two_left col-lg-4">
+                        <ul class="d-flex ">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Order Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="two_right  col-lg-7 ">
+                        <div class="d-flex justify-content-end">
+                            <div class="two_right_left  ">
+                                <span><i class="fa-solid fa-hand hand"></i> 100% Secure delivery without contacting the
+                                    courier</span>
+                            </div>
+                            <div class="two_right_center ">
+                                <span>Need help? Call Us: <strong><a href="tel">+ 0020 500</a></strong></span>
+                            </div>
+                            <div class="two_right_right ">
+                                <span class="lang">English <i class="fa-solid fa-angle-down"></i>
+                                    <div class="lang_down">
+                                        <ul>
+                                            <li><span>English</span></li>
+                                            <li><span>Spanish</span></li>
+                                            <li><span>German</span></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <span class="currency">USD <i class="fa-solid fa-angle-down"></i>
+                                    <div class="lang_down">
+                                        <ul>
+                                            <li><span>USD</span></li>
+                                            <li><span>INR</span></li>
+                                            <li><span>GBP</span></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_three py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="header_three_left col-lg-2">
+                        <a href="index.html"><img
+                                src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo.png" alt="">
+                            <span>Online Grocery Shopping Center</span></a>
+                    </div>
+                    <div class="header_three_center col-lg-8 d-flex justify-content-between align-items-center">
+                        <div class="location d-flex justify-content-end align-items-center">
+                            <button id="myBtn" class="d-flex justify-content-end align-items-center">
+                                <div class="location_left d-flex flex-column">
+                                    <span class="location_top">Your location</span>
+                                    <span class="location_bottom">Select a Location</span>
+                                </div>
+                                <div class="location_right">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content ">
+                                    <span class="close text-end">&times;</span>
+                                    <h6>Choose your Delivery Location</h6>
+                                    <p>Enter your address and we will specify the offer for your area.</p>
+                                    <form action="">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" placeholder="Search your area">
+                                    </form>
+                                    <div class="cities">
+                                        <div class="place">
+                                            Select A Location
+                                        </div>
+                                        <div class="place">
+                                            Alabama
+                                        </div>
+                                        <div class="place">
+                                            Alaska
+                                        </div>
+                                        <div class="place">
+                                            Arizona
+                                        </div>
+                                        <div class="place">
+                                            California
+                                        </div>
+                                        <div class="place">
+                                            Colorado
+                                        </div>
+                                        <div class="place">
+                                            Florida
+                                        </div>
+                                        <div class="place">
+                                            Georgia
+                                        </div>
+                                        <div class="place">
+                                            Kansas
+                                        </div>
+                                        <div class="place">
+                                            Minnesota
+                                        </div>
+                                        <div class="place">
+                                            New York
+                                        </div>
+                                        <div class="place">
+                                            Washington
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_three_right col-lg-2 d-flex  align-items-center">
+                        <div class="login_btn">
+                            <a href="">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="basket_btn">
+                            <a href="cart.html" class=" d-flex justify-content-end align-items-center">
+                                <div id="prod_price"  class="cart_price">
+                                    <span class="currency_symbol">$</span>
+                                    <span  class="price">0.00</span>
+                                </div>
+                                <div class="cart_icon">
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span id="prod_count" class="count">0</span>
+                                    </i>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_four py-2">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="four_left col-lg-3">
+                        <span class="four_span_top"><i class="fa-solid fa-bars bar"></i>ALL CATEGORIES<i
+                                class="fa-solid fa-angle-down angel_categories"></i></span>
+                        <span class="four_span_bottom">TOTAL 63 PRODUCTS</span>
+                        <div class="four_left_categories">
+                            <ul>
+                                <li class="category_parent fresh"><a href=""><i class="fa-solid fa-apple-whole"></i>
+                                        Fruit &
+                                        Vegetabels <i class="fa-solid fa-angle-right icon_right"></i></a>
+                                    <div class="fruit_dropdown">
+                                        <ul>
+                                            <li>Cuts & Sprouts</li>
+                                            <li> Exotic Fruits & Veggies</li>
+                                            <li>Fresh Fruits</li>
+                                            <li>Fresh Vegetabels</li>
+                                            <li>Herbs & Seasonings</li>
+                                            <li>Packaged Produce</li>
+                                            <li>Party Trays</li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-bacon"></i> Meats &
+                                        Seafood</a></li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-egg"></i>Breakfast &
+                                        Dairy</a></li>
+                                <li class="category_parent beverages"><a href=""><i
+                                            class="fa-solid fa-mug-hot"></i>Beverages <i
+                                            class="fa-solid fa-angle-right icon_right"></i></a>
+                                    <div class="beverages_dropdown">
+                                        <ul>
+                                            <li>Coffee</li>
+                                            <li>Craft Beer</li>
+                                            <li>Drink Boxes & Pounches</li>
+                                            <li>Milk & Plant-Based Milk</li>
+                                            <li>Soda & Pop</li>
+                                            <li>Sparkling Water</li>
+                                            <li>Tea & Kombucha</li>
+                                            <li>Water</li>
+                                            <li>Wine</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-cookie"></i>Breads &
+                                        Bakery</a></li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-snowflake"></i>Frozen
+                                        Foods</a></li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-candy-cane"></i>Biscuit &
+                                        Snacks</a></li>
+                                <li class="category_parent"><a href=""><i class="fa-solid fa-seedling"></i>Grocery &
+                                        Staples</a></li>
+                            </ul>
+                            <div class="link_ctgry">
+                                <ul>
+                                    <li class="link_category link-category_first"><a href="">Value of the Day</a>
+                                    </li>
+                                    <li class="link_category"><a href="">Top 100 Offers</a></li>
+                                    <li class="link_category"><a href="">New Arrivals</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="four_right col-lg-9">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li class="fourth_first_li categorie_li"><a class="category_a" href="">HOME<i
+                                        class="fa-solid fa-angle-down angel_categories"></i></a>
+                                <ul class="home_down">
+                                    <li><a href="">Home 1</a></li>
+                                    <li><a href="">Home 2</a></li>
+                                    <li><a href="">Home 3</a></li>
+                                    <li><a href="">Home 4</a></li>
+                                    <li><a href="">Home 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="categorie_li shop"><a class="category_a" href="">SHOP<i
+                                        class="fa-solid fa-angle-down angel_categories"></i></a>
+                                <div class="shop_down ">
+                                    <div class="shop_div">
+                                        <div class="span_text"><span>Shop Lists</span></div>
+                                        <ul>
+                                            <li><a href="">Shop Default</a></li>
+                                            <li><a href="">Shop Ride Sidebar</a></li>
+                                            <li><a href="">Shop Wide</a></li>
+                                            <li><a href="">List Left Sidebar</a></li>
+                                            <li><a href="">Load More Button</a></li>
+                                            <li><a href="">Infinite Scrolling</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop_div">
+                                        <div class="span_text"><span>Product Details</span></div>
+                                        <ul>
+                                            <li><a href="">Product Default</a></li>
+                                            <li><a href="">Product Variable</a></li>
+                                            <li><a href="">Product Grouped</a></li>
+                                            <li><a href="">Product External</a></li>
+                                            <li><a href="">Product Downloadbele</a></li>
+                                            <li><a href="">Product With Video</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop_div">
+                                        <div class="span_text"><span>Product Types</span></div>
+                                        <ul>
+                                            <li><a href="">Single Type 1</a></li>
+                                            <li><a href="">Single Type 2</a></li>
+                                            <li><a href="">Single Type 3</a></li>
+                                            <li><a href="">Single Type 4</a></li>
+                                            <li><a href="">Thumbnails Left</a></li>
+                                            <li><a href="">Zoom Image</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop_div">
+                                        <div class="span_text"><span>Shop Pages</span></div>
+                                        <ul>
+                                            <li><a href="">Cart</a></li>
+                                            <li><a href="">Checkout</a></li>
+                                            <li><a href="">My account</a></li>
+                                            <li><a href="">Wishlist</a></li>
+                                            <li><a href="">Order Tracking</a></li>
+                                            <li><a href="">Order on Whatsapp</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop_div">
+                                        <div class="span_text"><span>Shop Layouts</span></div>
+                                        <ul>
+                                            <li><a href="">Two Columns</a></li>
+                                            <li><a href="">Three Columns</a></li>
+                                            <li><a href="">Three Columns Wide</a></li>
+                                            <li><a href="">Four Columns</a></li>
+                                            <li><a href="">Four Columns Wide</a></li>
+                                            <li><a href="">Five Columns Wide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="categorie_li"><a class="category_a" href=""><i class="fa-solid fa-fish"></i> MEAT
+                                    & SEAFOOD</a></li>
+                            <li class="categorie_li"><a class="category_a" href=""><i
+                                        class="fa-solid fa-cookie"></i>BAKERY</a></li>
+                            <li class="categorie_li"><a class="category_a" href=""><i
+                                        class="fa-thin fa-mug-saucer"></i>BEVERAGES</a></li>
+                            <li class="categorie_li"><a class="category_a" href="">BLOG</a></li>
+                            <li class="categorie_li"><a class="category_a" href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobile py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="mobile_left col-4">
+                        <i id="open_menu" class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="mobile_center col-4">
+                        <a href="index.html">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="mobile_right col-4">
+                        <div class="basket_btn d-flex justify-content-end align-items-center">
+
+                            <div class="cart_icon">
+                                <a href="">
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span id="mobile_prod_count" class="count">0</span>
+                                    </i>
+                                </a>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_menu animate__animated">
+            <div class="container-fluid">
+                <div class="menu_top py-3 d-flex justify-content-between align-items-center">
+                    <div class="menu_top_left">
+                        <a href="">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu_top_right ">
+                        <span id="close_menu"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                </div>
+                <div class="menu_location">
+                    <button id="myBtn_menu" class="d-flex justify-content-between align-items-center">
+                        <div class="location_left d-flex flex-column">
+                            <span class="location_top">Your location</span>
+                            <span class="location_bottom">Select a Location</span>
+                        </div>
+                        <div class="location_right">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </button>
+                    <div id="myModal_menu" class="modal_menu">
+                        <div class="modal-content_menu ">
+                            <div class="modal_menu_top d-flex justify-content-between">
+                                <div class="modal_content_text">
+                                    <h6>Choose your Delivery Location</h6>
+                                    <p>Enter your address and we will specify the offer for your area.</p>
+                                </div>
+                                <div class="close_menu">
+                                    <span class=" ">&times;</span>
+                                </div>
+                            </div>
+                            <div class="form_menu">
+                                <form action="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search your area">
+                                </form>
+                                <div class="cities">
+                                    <div class="place">
+                                        Select A Location
+                                    </div>
+                                    <div class="place">
+                                        Alabama
+                                    </div>
+                                    <div class="place">
+                                        Alaska
+                                    </div>
+                                    <div class="place">
+                                        Arizona
+                                    </div>
+                                    <div class="place">
+                                        California
+                                    </div>
+                                    <div class="place">
+                                        Colorado
+                                    </div>
+                                    <div class="place">
+                                        Florida
+                                    </div>
+                                    <div class="place">
+                                        Georgia
+                                    </div>
+                                    <div class="place">
+                                        Kansas
+                                    </div>
+                                    <div class="place">
+                                        Minnesota
+                                    </div>
+                                    <div class="place">
+                                        New York
+                                    </div>
+                                    <div class="place">
+                                        Washington
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_all_categories ">
+                    <div class="four_top_span d-flex justify-content-between align-items-center">
+                        <i class="fa-solid fa-bars bar"></i>
+                        <span class="four_span_top"></i>ALL CATEGORIES</span>
+                        <i class="fa-solid fa-angle-down angel_categories"></i>
+                    </div>
+                    <div class="four_left_categories">
+                        <ul class="ul_menu">
+                            <li class="category_parent fresh_mobile  align-items-center">
+                                <div class="fresh d-flex justify-content-between align-items-center">
+                                    <a href=""><i class="fa-solid fa-apple-whole"></i>
+                                        Fruit &
+                                        Vegetabels</a> <i class="fa-solid fa-angle-right icon_right"></i>
+                                </div>
+                                <div class="fruit_dropdown_mobile ">
+                                    <ul class="ul_next">
+                                        <li>Cuts & Sprouts</li>
+                                        <li> Exotic Fruits & Veggies</li>
+                                        <li>Fresh Fruits</li>
+                                        <li>Fresh Vegetabels</li>
+                                        <li>Herbs & Seasonings</li>
+                                        <li>Packaged Produce</li>
+                                        <li>Party Trays</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-bacon"></i> Meats &
+                                    Seafood</a></li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-egg"></i>Breakfast &
+                                    Dairy</a></li>
+                            <li class="category_parent beverages_mobile">
+                                <div class="beverages d-flex justify-content-between align-items-center">
+                                    <a href=""><i class="fa-solid fa-mug-hot"></i>Beverages</a>
+                                    <i class="fa-solid fa-angle-right icon_right"></i>
+                                </div>
+                                <div class="beverages_dropdown_mobile">
+                                    <ul class="ul_next">
+                                        <li>Coffee</li>
+                                        <li>Craft Beer</li>
+                                        <li>Drink Boxes & Pounches</li>
+                                        <li>Milk & Plant-Based Milk</li>
+                                        <li>Soda & Pop</li>
+                                        <li>Sparkling Water</li>
+                                        <li>Tea & Kombucha</li>
+                                        <li>Water</li>
+                                        <li>Wine</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-cookie"></i>Breads &
+                                    Bakery</a></li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-snowflake"></i>Frozen
+                                    Foods</a></li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-candy-cane"></i>Biscuit &
+                                    Snacks</a></li>
+                            <li class="category_parent"><a href=""><i class="fa-solid fa-seedling"></i>Grocery &
+                                    Staples</a></li>
+                        </ul>
+                        <div class="link_ctgry">
+                            <div class="link-category_menu"></div>
+                            <ul class="ul_menu">
+                                <li class="link_category link-category_first"><a href="">Value of the Day</a>
+                                </li>
+                                <li class="link_category"><a href="">Top 100 Offers</a></li>
+                                <li class="link_category"><a href="">New Arrivals</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu_navigation">
+                    <span>Site Navigation</span>
+                    <div class="navigation_menu_border"></div>
+                </div>
+                <div class="menu_categories  ">
+                    <ul class="shop_all_menu">
+                        <li class="fourth_first_li categorie_li">
+                            <div class="home_menu d-flex justify-content-between align-items-center">
+                                <a class="category_a" href="">HOME</a><i
+                                    class="fa-solid fa-angle-down angel_categories"></i>
+                            </div>
+                            <ul class="home_down_mobile">
+                                <li><a href="">Home 1</a></li>
+                                <li><a href="">Home 2</a></li>
+                                <li><a href="">Home 3</a></li>
+                                <li><a href="">Home 4</a></li>
+                                <li><a href="">Home 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="categorie_li shop">
+                            <div class="shop_menu d-flex justify-content-between align-items-center">
+                                <a class="category_a" href="">SHOP</a>
+                                <i class="fa-solid fa-angle-down angel_categories"></i>
+                            </div>
+                            <div class="shop_down_mobile">
+                                <div class="shop_div">
+                                    <div class="shop_down_one">
+                                        <div
+                                            class="shop_dropdown_menu d-flex justify-content-between align-items-center">
+                                            <a href="">Shop Lists</a>
+                                            <i class="fa-solid fa-angle-down angel_categories"></i>
+                                        </div>
+                                        <ul class="shop_down_mobile_one">
+                                            <li><a href="">Shop Default</a></li>
+                                            <li><a href="">Shop Ride Sidebar</a></li>
+                                            <li><a href="">Shop Wide</a></li>
+                                            <li><a href="">List Left Sidebar</a></li>
+                                            <li><a href="">Load More Button</a></li>
+                                            <li><a href="">Infinite Scrolling</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shop_div">
+                                    <div class="shop_down_two">
+                                        <div
+                                            class="shop_dropdown_menu d-flex justify-content-between align-items-center">
+                                            <a href="">Product Details</a>
+                                            <i class="fa-solid fa-angle-down angel_categories"></i>
+                                        </div>
+                                        <ul class="shop_down_mobile_two">
+                                            <li><a href="">Product Default</a></li>
+                                            <li><a href="">Product Variable</a></li>
+                                            <li><a href="">Product Grouped</a></li>
+                                            <li><a href="">Product External</a></li>
+                                            <li><a href="">Product Downloadbele</a></li>
+                                            <li><a href="">Product With Video</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shop_div">
+                                    <div class="shop_down_three">
+
+                                        <div
+                                            class="shop_dropdown_menu d-flex justify-content-between align-items-center">
+                                            <a href="">Product Types</a>
+                                            <i class="fa-solid fa-angle-down angel_categories"></i>
+                                        </div>
+                                        <ul class="shop_down_mobile_three">
+                                            <li><a href="">Single Type 1</a></li>
+                                            <li><a href="">Single Type 2</a></li>
+                                            <li><a href="">Single Type 3</a></li>
+                                            <li><a href="">Single Type 4</a></li>
+                                            <li><a href="">Thumbnails Left</a></li>
+                                            <li><a href="">Zoom Image</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="shop_div">
+                                    <div class="shop_down_four">
+                                        <div
+                                            class="shop_dropdown_menu d-flex justify-content-between align-items-center">
+                                            <a href="">Shop Pages</a>
+                                            <i class="fa-solid fa-angle-down angel_categories"></i>
+                                        </div>
+                                        <ul class="shop_down_mobile_four">
+                                            <li><a href="">Cart</a></li>
+                                            <li><a href="">Checkout</a></li>
+                                            <li><a href="">My account</a></li>
+                                            <li><a href="">Wishlist</a></li>
+                                            <li><a href="">Order Tracking</a></li>
+                                            <li><a href="">Order on Whatsapp</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shop_div">
+                                    <div class="shop_down_five">
+
+                                        <div
+                                            class="shop_dropdown_menu d-flex justify-content-between align-items-center">
+                                            <a href="">Shop Layouts</a>
+                                            <i class="fa-solid fa-angle-down angel_categories"></i>
+                                        </div>
+                                        <ul class="shop_down_mobile_five">
+                                            <li><a href="">Two Columns</a></li>
+                                            <li><a href="">Three Columns</a></li>
+                                            <li><a href="">Three Columns Wide</a></li>
+                                            <li><a href="">Four Columns</a></li>
+                                            <li><a href="">Four Columns Wide</a></li>
+                                            <li><a href="">Five Columns Wide</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="categorie_li"><a class="category_a" href=""><i class="fa-solid fa-fish"></i> MEAT
+                                & SEAFOOD</a></li>
+                        <li class="categorie_li"><a class="category_a" href=""><i
+                                    class="fa-solid fa-cookie"></i>BAKERY</a></li>
+                        <li class="categorie_li"><a class="category_a" href=""><i
+                                    class="fa-thin fa-mug-saucer"></i>BEVERAGES</a></li>
+                        <li class="categorie_li"><a class="category_a" href="">BLOG</a></li>
+                        <li class="categorie_li"><a class="category_a" href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="menu_comment">
+                    <span>Copyright 2022 © Bacola WordPress Theme. All rights reserved. <span>Powered by
+                            KlbTheme.</span></span>
+                    <div class="comment_menu_border"></div>
+                </div>
+                <div class="menu_lang ">
+                    <div class="lang_down_span d-flex justify-content-between align-items-center">
+                        <span class="lang">English</span> <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="lang_down">
+                        <ul>
+                            <li><span>English</span></li>
+                            <li><span>Spanish</span></li>
+                            <li><span>German</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="menu_currency">
+                    <div class="currency_down_span d-flex justify-content-between align-items-center">
+                        <span class="currency">USD</span> <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="currency_down">
+                        <ul>
+                            <li><span>USD</span></li>
+                            <li><span>INR</span></li>
+                            <li><span>GBP</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <section id="emptybasket" class="empty py-5 d-none">
+        <div class="emptycart">
+            <div class="iconsvg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.028 280.028">
+                    <path class="c-01" d="M35.004 0h210.02v78.758H35.004V0z" fill="#b7343e"></path>
+                    <path class="c-02"
+                        d="M262.527 61.256v201.27c0 9.626-7.876 17.502-17.502 17.502H35.004c-9.626 0-17.502-7.876-17.502-17.502V61.256h245.025z"
+                        fill="#f04652"></path>
+                    <path class="c-03"
+                        d="M35.004 70.007h26.253V26.253L35.004 0v70.007zm183.767-43.754v43.754h26.253V0l-26.253 26.253z"
+                        fill="#f04652"></path>
+                    <path class="c-04"
+                        d="M61.257 61.256V26.253L17.503 61.256h43.754zm157.514-35.003v35.003h43.754l-43.754-35.003z"
+                        fill="#ab212b"></path>
+                    <path class="c-05"
+                        d="M65.632 105.01c-5.251 0-8.751 3.5-8.751 8.751s3.5 8.751 8.751 8.751 8.751-3.5 8.751-8.751c0-5.25-3.5-8.751-8.751-8.751zm148.764 0c-5.251 0-8.751 3.5-8.751 8.751s3.5 8.751 8.751 8.751 8.751-3.5 8.751-8.751c.001-5.25-3.501-8.751-8.751-8.751z"
+                        fill="#cf984a"></path>
+                    <path class="c-06"
+                        d="M65.632 121.637c5.251 0 6.126 6.126 6.126 6.126 0 39.379 29.753 70.882 68.257 70.882s68.257-31.503 68.257-70.882c0 0 .875-6.126 6.126-6.126s6.126 6.126 6.126 6.126c0 46.38-35.003 83.133-80.508 83.133s-80.508-37.629-80.508-83.133c-.001-.001.874-6.126 6.124-6.126z"
+                        fill="#cf984a"></path>
+                    <path class="c-07"
+                        d="M65.632 112.886c5.251 0 6.126 6.126 6.126 6.126 0 39.379 29.753 70.882 68.257 70.882s68.257-31.503 68.257-70.882c0 0 .875-6.126 6.126-6.126s6.126 6.126 6.126 6.126c0 46.38-35.003 83.133-80.508 83.133s-80.508-37.629-80.508-83.133c-.001 0 .874-6.126 6.124-6.126z"
+                        fill="rgb(253, 251, 247)"></path>
+                </svg>
+            </div>
+            <p class="textempty">YOUR CART IS CURRENTLY EMPTY.</p>
+            <p>
+                <a href="index.html">Return to shop</a>
+            </p>
+        </div>
+    </section>
+    <section id="fullbasket" class="full py-5">
+        <div class="container">
+            <div class="template col-lg-9 d-flex justify-content-between ">
+                <div class="name col-lg-7 col-2">
+                    <span class="productname">Product</span>
+                </div>
+                <div class="prodprice col-lg-1">
+                    <span>Price</span>
+                </div>
+                <div class="countprod col-lg-1 col-2">
+                    <span>Quantity</span>
+                </div>
+                <div class="prodtotal col-lg-1">
+                    <span>Subtotal</span>
+                </div>
+                <div class="prodemptydiv col-lg-1">
+                </div>
+            </div>
+            <div class="row">
+                <div id="list" class="full_left py-3 col-lg-9 col-12 ">
+
+                </div>
+                <div class="full_right col-lg-3 p-3 col-12">
+                    <div class="right_name">
+                        <h6>CART TOTALS</h6>
+                    </div>
+                    <div class="right_subtotal">
+                        <div class="subtotal_left">
+                            <span>Subtotal</span>
+                        </div>
+                        <div id="subtotal_num" class="subtotal_right">0</div>
+                    </div>
+                    <div class="right_shipping d-flex justify-content-between align-items-center">
+                        <div class="shipping_left ">
+                            <span>Shipping</span>
+                        </div>
+                        <div class="shipping_right text-end">
+                            <p onclick="calculateShipping(true)"><label for="flat-rate">Flat rate: <span style="color: #d51243;">$5.00</span></label> 
+                                <input type="radio"  name="true" id="flat-rate" class="delivery_choice" value="Free sheeping" checked></p>
+                            <p onclick="calculateShipping(false)" ><label for="freeshipping" >Free Shipping</label> <input id="freeshipping" class="delivery_choice" type="radio" name="true"></p>
+                            <p onclick="calculateShipping(false)"><label for="localpickup">Local pickup</label> <input id="localpickup" class="delivery_choice" type="radio" name="true"></p>
+                            <p><label for="">Shipping to <span style="font-weight: bolder;">AL</span>.</label></p>
+                            <a class="change_address" href="">Change address</a>
+                        </div>
+                    </div>
+                    <div class="right_total">
+                        <div class="total_left"><span>Total</span></div>
+                        <div id="total_num" class="total_right">0</div>
+                    </div>
+                    <div class="totallink">
+                        <a href="">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section>
+        <div class="subscribe_top pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="subscribe_top_left col-lg-5">
+                        <div class="top_left_text">
+                            <h6>$20 discount for your first order</h6>
+                            <h3>Join our newsletter and get...</h3>
+                            <p>Join our email subscription now to get updates on promotions and coupons.</p>
+                        </div>
+                        <div class="top_left_input">
+                            <i class="fa-solid fa-envelope email"></i>
+                            <input class="input" type="email" placeholder="Your email address">
+                            <input class="btn_input" type="submit" value="Subscribe">
+                        </div>
+                    </div>
+                    <div class="subscribe_top_right col-lg-7 text-end">
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/coupon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_icon">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="icon_box col-lg-3">
+                        <i class="fa-solid fa-bottle-water"></i>
+                        <span>Everyday fresh products</span>
+                    </div>
+                    <div class="icon_box col-lg-3">
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Free delivery for order over $70</span>
+                    </div>
+                    <div class="icon_box col-lg-3">
+                        <i class="fa-solid fa-percent"></i>
+                        <span>Daily Mega Discounts</span>
+                    </div>
+                    <div id="icon_last" class="icon_box col-lg-3"><i class="fa-solid fa-dollar-sign "></i><span>Best
+                            price
+                            on the market</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_text">
+            <div class="container">
+                <div class="row py-7">
+                    <div class="text_box col-lg-2-5">
+                        <span>FRUIT & VEGETABLES</span>
+                        <ul>
+                            <li><a href="">Fresh Vegetables</a></li>
+                            <li><a href="">Herbs & Seasonings</a></li>
+                            <li><a href="">Fresh Fruits</a></li>
+                            <li><a href="">Cuts & Sprouts</a></li>
+                            <li><a href="">Exotic Fruits & Veggies</a></li>
+                            <li><a href="">Packaged Produce</a></li>
+                            <li><a href="">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="text_box col-lg-2-5">
+                        <span>BREAKFAST & DAIRY</span>
+                        <ul>
+                            <li><a href="">Milk & Flavoured Milk</a></li>
+                            <li><a href="">Butter and Margarine</a></li>
+                            <li><a href="">Cheese</a></li>
+                            <li><a href="">Eggs Substitutes</a></li>
+                            <li><a href="">Honey</a></li>
+                            <li><a href="">Marmalades</a></li>
+                            <li><a href="">Sour Cream and Dips</a></li>
+                            <li><a href="">Yogurt</a></li>
+                        </ul>
+                    </div>
+                    <div class="text_box col-lg-2-5">
+                        <span>MEAT & SEAFOOD</span>
+                        <ul>
+                            <li><a href="">Breakfast Sausage</a></li>
+                            <li><a href="">Dinner Sausage</a></li>
+                            <li><a href="">Beef</a></li>
+                            <li><a href="">Chicken</a></li>
+                            <li><a href="">Sliced Deli Meat</a></li>
+                            <li><a href="">Shrimp</a></li>
+                            <li><a href="">Wild Caught Fillets</a></li>
+                            <li><a href="">Crab and Shellfish</a></li>
+                            <li><a href="">Farm Raised Fillets</a></li>
+                        </ul>
+                    </div>
+                    <div class="text_box col-lg-2-5">
+                        <span>BEVERAGES</span>
+                        <ul>
+                            <li><a href="">Water</a></li>
+                            <li><a href="">SparlingWater</a></li>
+                            <li><a href="">Soda & Pop</a></li>
+                            <li><a href="">Coffee</a></li>
+                            <li><a href="">Milk & Plant-Based Milk</a></li>
+                            <li><a href="">Tea & Kombucha</a></li>
+                            <li><a href="">Drink Boxes & Pouches</a></li>
+                            <li><a href="">Craft Beer</a></li>
+                            <li><a href="">Wine</a></li>
+                        </ul>
+                    </div>
+                    <div class="text_box col-lg-2-5">
+                        <span>BREADS & BAKERY</span>
+                        <ul>
+                            <li><a href="">Milk & Flavoured Milk</a></li>
+                            <li><a href="">Butter and Margarine</a></li>
+                            <li><a href="">Cheese</a></li>
+                            <li><a href="">Eggs Substitutes</a></li>
+                            <li><a href="">Honey</a></li>
+                            <li><a href="">Marmalades</a></li>
+                            <li><a href="">Sour Cream and Dips</a></li>
+                            <li><a href="">Yogurt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_contact pt-3">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="contact_left col-lg-3 col-12  d-flex align-items-center">
+                        <div class="phone_icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="phone_number">
+                            <h4>8 800 555-55</h4>
+                            <span>Working 8:00 - 22:00</span>
+                        </div>
+                    </div>
+                    <div class="contact_right justify-content-end col-lg-9 col-12 d-flex align-items-center">
+                        <div class="mobile_app d-flex ">
+                            <div class="app_content text-end">
+                                <h6>Download App on Mobile:</h6>
+                                <span>15% discount on your first purchase</span>
+                            </div>
+                            <div class="app_img">
+                                <a href=""><img
+                                        src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/google-play.png"
+                                        alt=""></a>
+                                <a href=""><img
+                                        src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/app-store.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <ul class="d-flex ">
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></li></a>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="footer_bottom_left">
+                    <p>Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</p>
+                </div>
+                <div class="footer_bottom_center">
+                    <ul class="d-flex">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_right ">
+                    <a href="">
+                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/payments.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_mobile d-none">
+            <div class="footer_search d-none">
+                <div class="search_div">
+                    <form action="">
+                        <input type="text" placeholder="Search for products... ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <ul class="d-flex justify-content-between">
+                    <li><a href=""><i class="fa-solid fa-store"></i><span>Store</span></a></li>
+                    <li id="search_menu"><a href=""><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-heart"></i><span>Wishlist</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i><span>Account</span></a></li>
+                    <li id="category_icon"><a href=""><i class="fa-solid fa-bars"></i><span>Categories</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
